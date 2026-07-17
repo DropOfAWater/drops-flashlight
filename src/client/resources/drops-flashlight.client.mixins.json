@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "drop.flashlight.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "BrightnessGetterMixin",
+    "EntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

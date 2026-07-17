@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "drops-flashlight",
+	"version": "${version}",
+	"name": "drops-flashlight",
+	"description": "This mod adds a simple client-only flashlight.",
+	"authors": [
+		"A_drop_of_water"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/drops-flashlight",
+		"sources": "https://github.com/DropOfAWater/drops-flashlight",
+		"issues": "https://github.com/DropOfAWater/drops-flashlight/issues"
+	},
+	"license": "GPL-3.0-only",
+	"icon": "assets/drops-flashlight/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"drop.flashlight.client.DropsFlashlightClient"
+		],
+		"fabric-datagen": [
+			"drop.flashlight.client.DataGenEntrypoint"
+		]
+	},
+	"mixins": [
+		{
+			"config": "drops-flashlight.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
