@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2026 A_drop_of_water
+ * SPDX-License-Identifier: GPL-3.0-only
+ */
 package drop.flashlight.client.translations;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
