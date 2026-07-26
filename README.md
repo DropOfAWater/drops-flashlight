@@ -33,7 +33,7 @@ The light created by the flashlight can only be seen by you. This mod has been t
 2. Install this mod and Fabric API in your `mods` folder.
 3. I also suggest installing Sodium for improved performance.
 
-Required Fabric loader versions and Fabric API versions are specified [here](#supported-minecraft-versions-and-requirements).
+Required Fabric loader versions and Fabric API versions are specified ([here](#supported-minecraft-versions-and-requirements)).
 
 ## Supported Minecraft versions and requirements
 
