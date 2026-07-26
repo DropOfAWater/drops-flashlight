@@ -46,7 +46,7 @@ Required Fabric loader versions and Fabric API versions are specified [here](#su
 This project is licensed under the GPL-3.0-only license. See the `LICENSE` file for details.
 
 ## Contact
-You can contact me on Discord (@a_drop_of_water) or open an issue on GitHub.
+You can contact me by opening an issue on GitHub.
 
 ## Links
 - [Modrinth Page for Drop's Flashlight](https://modrinth.com/mod/drops-flashlight)
