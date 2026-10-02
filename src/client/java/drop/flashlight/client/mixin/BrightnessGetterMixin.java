@@ -29,7 +29,7 @@ public interface BrightnessGetterMixin {
 		if (toBeLit.contains(posInt3D)) lightTheBlock = true;
 		toBeLitSemaphore.release();
 
-		if (lightTheBlock) return (11 << 4) | (11 << 20);
+		if (lightTheBlock) return (11 << 4);
 		return defaultValue;
 	}
 }

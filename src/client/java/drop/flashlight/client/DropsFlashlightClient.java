@@ -16,7 +16,6 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.phys.Vec2;
-import org.lwjgl.glfw.GLFW;
 
 import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
@@ -46,10 +45,10 @@ public class DropsFlashlightClient implements ClientModInitializer {
 
 	KeyMapping toggleFlashlightKey = KeyMappingHelper.registerKeyMapping(
 		new KeyMapping(
-				"key.drops-flashlight.toggle_flashlight", 	// The translation key for the key mapping.
-				InputConstants.Type.KEYSYM, 						// The type of the keybinding; KEYSYM for keyboard, MOUSE for mouse.
-				GLFW.GLFW_KEY_EQUAL, 								// The GLFW keycode of the key.
-				CATEGORY 											// The category of the mapping.
+				"key.drops-flashlight.toggle_flashlight",
+				InputConstants.Type.KEYBOARD,
+				InputConstants.KEY_EQUALS,
+				CATEGORY
 		)
 	);
 
@@ -121,6 +120,11 @@ public class DropsFlashlightClient implements ClientModInitializer {
 
 			toBeLitSemaphore.acquireUninterruptibly();
 			toBeLit.clear();
+
+			BlockPos clientBlockPos = client.player.blockPosition();
+			Int3D clientPosInt3D = new Int3D(clientBlockPos.getX(), clientBlockPos.getY(), clientBlockPos.getZ());
+			appendArrays(clientPosInt3D);
+			appendArrays(clientPosInt3D.offset(0, 1, 0));
 
 			for (int i = 0; i < lightRange; i++) {
 

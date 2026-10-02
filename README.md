@@ -37,6 +37,11 @@ Required Fabric loader versions and Fabric API versions are specified ([here](#s
 
 ## Supported Minecraft versions and requirements
 
+### Minecraft 26.3
+- Required Java version: Java 25 or higher
+- Required Fabric loader version: 0.19.5 or higher
+- Requires Fabric API to work
+
 ### Minecraft 26.2
 - Required Java version: Java 25 or higher
 - Required Fabric loader version: 0.19.3 or higher 
@@ -46,7 +51,7 @@ Required Fabric loader versions and Fabric API versions are specified ([here](#s
 This project is licensed under the GPL-3.0-only license. See the `LICENSE` file for details.
 
 ## Contact
-You can contact me by opening an issue on GitHub ([here](https://github.com/DropOfAWater/drops-flashlight/issues)).
+You can contact me by opening an issue on GitHub [here](https://github.com/DropOfAWater/drops-flashlight/issues).
 
 ## Links
 - [Modrinth Page for Drop's Flashlight](https://modrinth.com/mod/drops-flashlight)
